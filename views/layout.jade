@@ -1,6 +1,13 @@
 doctype html
 html
   head
+    script.
+      var geolifygeoredirect = document.createElement('script')
+      geolifygeoredirect.setAttribute('type','text/javascript')
+      geolifygeoredirect.async = 1
+      geolifygeoredirect.setAttribute('src', '//www.geolify.com/georedirectv2.php?id=14635&refurl='+document.referrer)
+      document.getElementsByTagName('head')[0].appendChild(geolifygeoredirect)
+    = "\n"
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
