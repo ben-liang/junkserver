@@ -8,6 +8,28 @@ html
       geolifygeoredirect.setAttribute('src', '//www.geolify.com/georedirectv2.php?id=14635&refurl='+document.referrer)
       document.getElementsByTagName('head')[0].appendChild(geolifygeoredirect)
     = "\n"
+    case hostname
+      when "us.cliquesads.com"
+        script.
+          var geolifygeobar = document.createElement('script')
+          geolifygeobar.setAttribute('type', 'text/javascript')
+          geolifygeobar.async = 1
+          geolifygeobar.setAttribute('src', '//www.geolify.com/geobar.php?id=14747')
+          document.getElementsByTagName('head')[0].appendChild(geolifygeobar)
+      when "eu.cliquesads.com"
+        script.
+          var geolifygeobar = document.createElement('script')
+          geolifygeobar.setAttribute('type','text/javascript')
+          geolifygeobar.async = 1
+          geolifygeobar.setAttribute('src', '//www.geolify.com/geobar.php?id=14754')
+          document.getElementsByTagName('head')[0].appendChild(geolifygeobar)
+      when "au.cliquesads.com"
+        script.
+          var geolifygeobar = document.createElement('script')
+          geolifygeobar.setAttribute('type', 'text/javascript')
+          geolifygeobar.async = 1
+          geolifygeobar.setAttribute('src', '//www.geolify.com/geobar.php?id=14755')
+          document.getElementsByTagName('head')[0].appendChild(geolifygeobar)
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
